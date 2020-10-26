@@ -1,0 +1,103 @@
+.pt-navbar {
+    background-color:#000 !important;
+}
+
+.fileBrowserPane > span > div:not(.options-selected):not(.directory-hover) {
+    background-color: #252526;
+    color: white;
+}
+
+
+.pt-tab-panel, .console-container, .pt-tabs, .Pane, .pt-flex-expander, .console-item-error, .diagnostics-pane {
+    background-color: #252526;
+}
+
+.diagnostic-title {
+	color: #106ba3;
+}
+
+.diagnostic-title:hover {
+	font-weight:bold;
+}
+
+.ui-container {
+ background-color:#000;   
+}
+
+.console-item-info, .console-line {
+    color:#ccc;
+}
+
+.console-item-error {
+    color:#d03636;
+    font-weight:bold;
+    text-shadow:none;
+}
+
+.console-item-warn {
+    color:#FFCC33;
+    background-color: #252526;
+}
+
+.pt-tree-node-content:hover {
+	background-color: rgba(92, 134, 166, .4);
+}
+
+.pt-button:hover {
+	background-color: rgba(92, 134, 166, .4) !important;
+}
+
+.pt-tabs {
+    border-bottom: 1px solid #000;
+}
+
+.pt-tab-list .pt-tab .diagnostic-title {
+    color:  #4D86FF !important;
+}
+.pt-tab-list .pt-tab:hover {
+    background-color: rgba(92, 134, 166, .4) !important;
+}
+
+.console-list .console-line {
+	border-bottom: 1px solid #333;
+}
+
+main > header > h1 {
+    color: #ccc;
+}
+
+main  a.pt-button.pt-icon-add.pt-large {
+    background-color: #243c57;
+    color:#ccc;
+    border-radius: 2px !important; 
+    background-image:none;
+}
+
+main  a.pt-button.pt-icon-add.pt-large:hover {
+    box-shadow:  0 0 20px 8px #4D86FF;
+}
+
+main a.pt-button.pt-icon-add.pt-large:before {
+    color: #ccc;
+}
+
+ul.pt-menu.project-list-menu{
+    border-radius: 2px;
+}
+
+div.project-list-item {
+    background-color: #000;
+    color:#ccc;
+    border-top: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-collapse:collapse;
+}
+
+
+div.project-list-item:hover a.pt-menu-item {
+    box-shadow:  0 0 20px 8px #4D86FF;
+}
+
+.editorPane .pt-non-ideal-state-title, .editorPane  .pt-non-ideal-state-description, .editorPane .pt-non-ideal-state-icon{
+    color:#ccc !important;
+}
