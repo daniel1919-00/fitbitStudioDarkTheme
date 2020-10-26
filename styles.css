@@ -58,8 +58,10 @@
     background-color: rgba(92, 134, 166, .4) !important;
 }
 
-.console-list .console-line {
-	border-bottom: 1px solid #333;
+.console-container .console-line {
+    border:none;
+	border-bottom: 2px solid #333 !important;
+    
 }
 
 main > header > h1 {
@@ -100,4 +102,8 @@ div.project-list-item:hover a.pt-menu-item {
 
 .editorPane .pt-non-ideal-state-title, .editorPane  .pt-non-ideal-state-description, .editorPane .pt-non-ideal-state-icon{
     color:#ccc !important;
+}
+
+.fileBrowserPane .pt-non-ideal-state-title,.fileBrowserPane .pt-non-ideal-state-description {
+    color:#ccc;
 }
