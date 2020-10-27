@@ -2,6 +2,9 @@
     background-color:#000 !important;
 }
 
+.fileBrowserPane {
+    background-color: #252526;
+}
 .fileBrowserPane > span > div:not(.options-selected):not(.directory-hover) {
     background-color: #252526;
     color: white;
