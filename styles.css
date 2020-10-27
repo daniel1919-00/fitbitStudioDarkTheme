@@ -34,6 +34,13 @@
     text-shadow:none;
 }
 
+.console-item-exception {
+    color:#d03636;
+    font-weight:bold;
+    text-shadow:none;
+    background-color:#000;
+}
+
 .console-item-warn {
     color:#FFCC33;
     background-color: #252526;
