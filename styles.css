@@ -10,6 +10,15 @@
     color: white;
 }
 
+.fileBrowserPane div.directory-hover {
+    background: #3e3123;
+    color:#fff;
+}
+
+.fileBrowserPane div.directory-hover .pt-tree-node-icon {
+    color:#00B5BE;
+}
+
 
 .pt-tab-panel, .console-container, .pt-tabs, .Pane, .pt-flex-expander, .console-item-error, .diagnostics-pane {
     background-color: #252526;
