@@ -128,15 +128,36 @@ div.project-list-item:hover a.pt-menu-item {
 }
 
 .project-create {
-  color:#fff;
+  color:#ccc;
+}
+
+.project-create .pt-button:not(.pt-intent-primary) {
+    background-color:#ccc;
+    background-image:none;
+}
+
+.project-create input {
+    color:#ccc;
+    background-color: #000;
+    border:1px solid #353535;
+}
+
+.project-create input::placeholder {
+    color:#626161;
 }
 
 .project-create .pt-card {
-  color: #000;
+  color: #ccc;
+  background-color:#353535;
 }
+
+.project-create .pt-card h5 {
+    color:#ccc;
+}
+
 .project-create form {
   background-color: #000;
-  border:1px solid #fff;
+  border:1px solid #353535;
 }
 
 .diagnostic-item-message {
