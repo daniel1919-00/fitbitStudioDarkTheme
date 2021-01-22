@@ -126,3 +126,19 @@ div.project-list-item:hover a.pt-menu-item {
 .fileBrowserPane .pt-non-ideal-state-title,.fileBrowserPane .pt-non-ideal-state-description {
     color:#ccc;
 }
+
+.project-create {
+  color:#fff;
+}
+
+.project-create .pt-card {
+  color: #000;
+}
+.project-create form {
+  background-color: #000;
+  border:1px solid #fff;
+}
+
+.diagnostic-item-message {
+    color:white !important;
+}
