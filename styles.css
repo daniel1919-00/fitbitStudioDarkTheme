@@ -105,7 +105,8 @@ a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
     color: white;
 }
 
-.fileBrowserPane div.directory-hover {
+.fileBrowserPane div.directory-hover,
+.fileBrowserPane div.directory-hover .pt-non-ideal-state {
     background:#32373B;
     color:#fff;
 }
@@ -215,6 +216,10 @@ div.project-list-item:hover a.pt-menu-item {
     box-shadow:  0 0 20px 8px #6495ed;
     display:inline-block;
     width:100%;
+}
+
+.editor-container .pt-non-ideal-state {
+    background-color: #252526;
 }
 
 
