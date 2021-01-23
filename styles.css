@@ -1,4 +1,4 @@
-.pt-non-ideal-state {
+ .pt-non-ideal-state {
 	width: 100%;
 	max-width: 100%;
 	background-color: black;
@@ -69,6 +69,10 @@ a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
 
 .fileBrowserPane div:not(.directory-hover) .pt-tree-node-icon {
     color:#6495ed;
+}
+
+.fileBrowserPane .pt-tree-node-caret:hover {
+    color: #6495ed;
 }
 
 .pt-tree-node.pt-tree-node-selected > .pt-tree-node-content {
@@ -239,4 +243,26 @@ div.project-list-item:hover a.pt-menu-item {
 
 .fileBrowserPane > span > div:not(.options-selected):not(.directory-hover) {
 	color: white;
+}
+
+.project-configuration-editor.pt-dark {
+    background:#1E1E1E;
+}
+
+.project-configuration-editor.pt-dark input[type="text"],
+.project-configuration-editor.pt-dark select,
+.project-configuration-editor.pt-dark select:active,
+.project-configuration-editor.pt-dark select:hover,
+.project-configuration-editor.pt-dark select option,
+.project-configuration-checkbox-group .pt-card.pt-interactive,
+.project-configuration-supported-locales .pt-card {
+    background:#3C3C3C;
+}
+
+.project-configuration-editor.pt-dark select:focus {
+    border: 1px solid #007FD4;
+}
+
+.project-configuration-supported-locales .pt-card input[type="text"] {
+    background:#1E1E1E;
 }
