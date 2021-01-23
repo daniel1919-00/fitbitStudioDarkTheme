@@ -1,3 +1,55 @@
+.pt-non-ideal-state {
+	width: 100%;
+	max-width: 100%;
+	background-color: black;
+}
+
+.pt-spinner .pt-spinner-head {
+	stroke: #6495ed;
+}
+
+.pt-non-ideal-state-title, .pt-non-ideal-state-description {
+    color:#ccc;
+}
+
+
+.pt-button.pt-intent-primary:not(.pt-disabled):not(.logout-button), 
+main a.pt-button.pt-large[class*="pt-intent-"],
+main a.pt-button.pt-large[class*="pt-icon-"]{
+	color: black !important;
+    background:#6495ed !important;
+}
+
+.pt-button.pt-intent-primary:hover:not(.pt-disabled):not(.logout-button), 
+main a.pt-button.pt-large[class*="pt-intent-"]:hover,
+main a.pt-button.pt-large[class*="pt-icon-"]:hover {
+    background:#4D86FF !important;
+}
+
+main a.pt-button.pt-icon-add.pt-large::before {
+	color: black !important;
+}
+
+
+.pt-button.pt-minimal.pt-intent-primary.logout-button {
+    color:#ccc;
+}
+
+a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
+    background-color:#32373B !important;
+}
+
+.project-create .pt-button:not([class*="pt-intent-"]) {
+    background: #ccc;
+    background-image:none;
+}
+
+.project-create .pt-button:not([class*="pt-intent-"]):hover 
+{
+    box-shadow:none;
+	background-color: #989a9d !important;
+}
+
 .pt-navbar {
     background-color:#000 !important;
 }
@@ -11,25 +63,24 @@
 }
 
 .fileBrowserPane div.directory-hover {
-    background: #3e3123;
+    background:#32373B;
     color:#fff;
 }
 
-.fileBrowserPane div.directory-hover .pt-tree-node-icon {
-    color:#00B5BE;
+.fileBrowserPane div:not(.directory-hover) .pt-tree-node-icon {
+    color:#6495ed;
 }
 
+.pt-tree-node.pt-tree-node-selected > .pt-tree-node-content {
+    background-color:#094771;
+}
+
+.pt-button[class*="pt-icon-"]::before {
+    color:#ccc;
+}
 
 .pt-tab-panel, .console-container, .pt-tabs, .Pane, .pt-flex-expander, .console-item-error, .diagnostics-pane {
     background-color: #252526;
-}
-
-.diagnostic-title {
-	color: #106ba3;
-}
-
-.diagnostic-title:hover {
-	font-weight:bold;
 }
 
 .ui-container {
@@ -59,7 +110,8 @@
 }
 
 .pt-tree-node-content:hover {
-	background-color: rgba(92, 134, 166, .4);
+/* 	background-color: #383B3D; */
+    background:#32373B;
 }
 
 .pt-button:hover {
@@ -71,10 +123,16 @@
 }
 
 .pt-tab-list .pt-tab .diagnostic-title {
-    color:  #4D86FF !important;
+    color:  #ccc;
 }
-.pt-tab-list .pt-tab:hover {
-    background-color: rgba(92, 134, 166, .4) !important;
+
+
+.pt-tab-list .pt-tab:hover .diagnostic-title {
+    font-weight: bold;
+}
+
+.pt-tab-indicator {
+    background-color:#ccc !important;
 }
 
 .console-container .console-line {
@@ -87,37 +145,25 @@ main > header > h1 {
     color: #ccc;
 }
 
-main  a.pt-button.pt-icon-add.pt-large {
-    background-color: #243c57;
-    color:#ccc;
-    border-radius: 2px !important; 
-    background-image:none;
-}
-
-main  a.pt-button.pt-icon-add.pt-large:hover {
-    box-shadow:  0 0 20px 8px #4D86FF;
-}
-
-main a.pt-button.pt-icon-add.pt-large:before {
-    color: #ccc;
-}
 
 ul.pt-menu.project-list-menu{
     border-radius: 2px;
+    border-color:#6495ed;
+    
 }
 
 div.project-list-item {
     background-color: #000;
     color:#ccc;
-    border-top: 1px solid #ccc;
-    border-bottom:1px solid #ccc;
-    border-collapse:collapse;
 }
 
 
 div.project-list-item:hover a.pt-menu-item {
-    box-shadow:  0 0 20px 8px #4D86FF;
+    box-shadow:  0 0 20px 8px #6495ed;
+    display:inline-block;
+    width:100%;
 }
+
 
 .editorPane .pt-non-ideal-state-title, .editorPane  .pt-non-ideal-state-description, .editorPane .pt-non-ideal-state-icon{
     color:#ccc !important;
@@ -131,18 +177,16 @@ div.project-list-item:hover a.pt-menu-item {
   color:#ccc;
 }
 
-.project-create .pt-button:not(.pt-intent-primary) {
-    background-color:#ccc;
-    background-image:none;
-}
 
-.project-create input {
+.project-create input[type="text"] {
     color:#ccc;
     background-color: #000;
-    border:1px solid #353535;
 }
 
-.project-create input::placeholder {
+.project-create input[type="text"]:not(.pt-intent-danger) {
+    border:1px solid #6495ed;
+}
+.project-create input[type="text"]::placeholder {
     color:#626161;
 }
 
@@ -151,15 +195,48 @@ div.project-list-item:hover a.pt-menu-item {
   background-color:#353535;
 }
 
+.project-create-template-chooser input:checked ~ .radio-card {
+	border: 2px solid #6495ed;
+}
+
 .project-create .pt-card h5 {
     color:#ccc;
 }
 
 .project-create form {
   background-color: #000;
-  border:1px solid #353535;
+  border:1px solid #6495ed;
 }
 
 .diagnostic-item-message {
     color:white !important;
+}
+
+.pt-popover .pt-popover-arrow .pt-popover-arrow-fill {
+    fill: #6495ed;
+}
+.pt-popover .pt-menu {
+    border:1px solid #6495ed;
+    background:black;
+    color:#ccc;
+}
+
+.pt-popover .pt-menu .pt-menu-divider {
+    border-color:#6495ed;
+}
+
+.pt-dark .pt-navbar-divider {
+	border-left-color: #646464;
+}
+
+.pt-dark .pt-button-group.pt-minimal .pt-button::after {
+	background:#646464;
+}
+
+.fileBrowserPane .options-selected {
+	background-color: rgba(92, 134, 166, .4)
+}
+
+.fileBrowserPane > span > div:not(.options-selected):not(.directory-hover) {
+	color: white;
 }
