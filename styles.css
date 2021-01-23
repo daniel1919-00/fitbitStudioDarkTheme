@@ -1,4 +1,4 @@
- .pt-non-ideal-state {
+.pt-non-ideal-state {
 	width: 100%;
 	max-width: 100%;
 	background-color: black;
@@ -12,6 +12,32 @@
     color:#ccc;
 }
 
+.pt-toast {
+    background-color: #252526;
+}
+
+.pt-toast:not([class*="pt-intent-"]) .pt-icon-standard {
+    color:#ccc;
+}
+
+.pt-dialog {
+    background: #252526;
+    color: #ccc;
+}
+
+.pt-dialog .pt-dialog-header {
+    background: #000;
+}
+
+.pt-dialog .pt-dialog-header * {
+    color: #ccc;
+}
+.pt-dialog .pt-dialog-header .pt-dialog-close-button:hover {
+    color: #737373;
+}
+.pt-dialog .pt-non-ideal-state {
+    background:#252526;
+}
 
 .pt-button.pt-intent-primary:not(.pt-disabled):not(.logout-button), 
 main a.pt-button.pt-large[class*="pt-intent-"],
@@ -21,9 +47,26 @@ main a.pt-button.pt-large[class*="pt-icon-"]{
 }
 
 .pt-button.pt-intent-primary:hover:not(.pt-disabled):not(.logout-button), 
-main a.pt-button.pt-large[class*="pt-intent-"]:hover,
-main a.pt-button.pt-large[class*="pt-icon-"]:hover {
+main a.pt-button.pt-large[class*="pt-intent-"]:hover:not(.pt-disabled),
+main a.pt-button.pt-large[class*="pt-icon-"]:hover:not(.pt-disabled) {
     background:#4D86FF !important;
+    box-shadow:  0 0 12px 1px #4D86FF;
+}
+
+.pt-button:not([class*="pt-intent-"]):not(.pt-minimal):not(.pt-icon-cross) {
+	background-image: none;
+    background: #f5f8fa;
+	color: #182026;
+}
+
+.pt-button:hover:not([class*="pt-intent-"]):not(.pt-minimal):not(.pt-icon-cross) {
+    background: #f5f8fa !important;
+    box-shadow:  0 0 12px 1px #f5f8fa;
+}
+
+.pt-button.pt-intent-danger:hover {
+    background-color: #db3737 !important;
+    box-shadow:  0 0 12px 1px #db3737;
 }
 
 main a.pt-button.pt-icon-add.pt-large::before {
@@ -83,8 +126,14 @@ a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
     color:#ccc;
 }
 
-.pt-tab-panel, .console-container, .pt-tabs, .Pane, .pt-flex-expander, .console-item-error, .diagnostics-pane {
+.pt-tab-panel, .console-container, 
+.pt-tabs, .Pane, .pt-flex-expander, 
+.console-item-error, .diagnostics-pane {
     background-color: #252526;
+}
+
+.pt-tab-panel .console-container {
+    border-top: none;
 }
 
 .ui-container {
