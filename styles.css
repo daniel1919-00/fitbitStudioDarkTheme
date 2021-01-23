@@ -216,6 +216,7 @@ div.project-list-item {
 div.project-list-item a.pt-menu-item {
     display:inline-block;
     width:100%;
+    padding: 7px 30px;
 }
 
 div.project-list-item a.pt-menu-item:hover {
