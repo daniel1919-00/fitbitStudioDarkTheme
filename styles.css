@@ -262,7 +262,7 @@ div.project-list-item:hover a.pt-menu-item {
 }
 
 .diagnostic-item-message {
-    color:white !important;
+    color:#ccc !important;
 }
 
 .pt-popover .pt-popover-arrow .pt-popover-arrow-fill {
