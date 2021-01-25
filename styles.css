@@ -25,6 +25,11 @@
     color: #ccc;
 }
 
+.pt-dialog .pt-dialog-body ul {
+    max-height:65vh;
+    overflow:auto;
+}
+
 .pt-dialog .pt-dialog-header {
     background: #000;
 }
