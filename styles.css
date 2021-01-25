@@ -326,20 +326,20 @@ div.project-list-item a.pt-menu-item:hover {
     background:#1E1E1E;
 }
 
-.project-configuration-editor.pt-dark input[type="text"],
 .project-configuration-editor.pt-dark select,
 .project-configuration-editor.pt-dark select:active,
 .project-configuration-editor.pt-dark select:hover,
 .project-configuration-editor.pt-dark select option,
 .project-configuration-checkbox-group .pt-card.pt-interactive,
-.project-configuration-supported-locales .pt-card {
-    background:#3C3C3C;
+.project-configuration-supported-locales .pt-card,
+.project-configuration-app-cluster-storage .pt-card{
+    background:#2b2a2a;
 }
 
 .project-configuration-editor.pt-dark select:focus {
     border: 1px solid #007FD4;
 }
 
-.project-configuration-supported-locales .pt-card input[type="text"] {
+.project-configuration-editor.pt-dark input[type="text"] {
     background:#1E1E1E;
 }
