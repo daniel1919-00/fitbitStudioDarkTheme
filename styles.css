@@ -1,3 +1,4 @@
+@-moz-document domain("studio.fitbit.com") {
 .pt-non-ideal-state {
 	width: 100%;
 	max-width: 100%;
@@ -342,4 +343,9 @@ div.project-list-item a.pt-menu-item:hover {
 
 .project-configuration-editor.pt-dark input[type="text"] {
     background:#1E1E1E;
+}
+
+.project-configuration-editor.pt-dark #file-name {
+    background:#2b2a2a;
+}
 }
